@@ -56,6 +56,11 @@ impl<'r, R: Responder<'r>> Responder<'r> for Content<R> {
     }
 }
 
+// impl<R> Content<R> {
+//     fn attachment(self, filename: String) -> Self {
+//     }
+// }
+
 macro_rules! ctrs {
     ($($name:ident: $ct:ident, $name_str:expr, $ct_str:expr),+) => {
         $(

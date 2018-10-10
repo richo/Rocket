@@ -19,6 +19,7 @@
 //! including [`Template`](/rocket_contrib/struct.Template.html) and
 //! [`Json`](/rocket_contrib/struct.Json.html).
 
+mod attachment;
 mod responder;
 mod redirect;
 mod named_file;
@@ -31,6 +32,7 @@ crate mod flash;
 pub mod content;
 pub mod status;
 
+pub use self::attachment::Attachment;
 pub use self::response::{Response, ResponseBuilder, Body, DEFAULT_CHUNK_SIZE};
 pub use self::responder::Responder;
 pub use self::redirect::Redirect;
