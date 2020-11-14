@@ -39,7 +39,7 @@ pub mod status;
 
 pub use self::response::DEFAULT_CHUNK_SIZE;
 pub use self::response::{Response, ResponseBody, ResponseBuilder, Body};
-pub use self::responder::Responder;
+pub use self::responder::{RangeResponder, Responder};
 pub use self::redirect::Redirect;
 pub use self::flash::Flash;
 pub use self::named_file::NamedFile;
